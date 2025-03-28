@@ -404,7 +404,9 @@ tmux_conf_update_plugins_on_reload=true
 #
 # "$@"
 # # /!\ do not remove the previous line
+# 没有增加新插件的情况下, 可以注释下面这行提升速度
 run '~/.tmux/plugins/tpm/tpm'
+
 set -g @plugin 'schasse/tmux-jump'
 set -g @jump-key 'j'
 # 创建一个自定义函数来搜索特殊 prompt 开头实现在 prompt 之间跳转 
